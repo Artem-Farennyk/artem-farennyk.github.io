@@ -170,7 +170,7 @@
     margin-left: 20px;
     margin-right: 21px;
   }
-  
+
   .banner-article {
     height: 206px;
   }
@@ -211,11 +211,6 @@
     height: 28px;
   }
 
-  .banner-article h3 {
-    font-size: 20px;
-    line-height: 29px;
-  }
-
   .cards-section-header h2 {
     font-size: 14px;
     line-height: 17px;
@@ -253,8 +248,6 @@
     padding-left: 19px;
     padding-right: 20px;
     padding-top: 69.54px;
-   
-
   }
 
   .menu-box-buttons a p,
@@ -289,5 +282,21 @@
   .article-info p {
     font-size: 14px;
     line-height: 17px;
+  }
+  .banner-article h3 {
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-article h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 475px) {
+  .banner-article h3 {
+    font-size: 18px;
   }
 }
