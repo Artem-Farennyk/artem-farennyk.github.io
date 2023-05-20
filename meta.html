@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>itBlog</title>
+  </head>
+  <body>
+    <script src="js/script.js"></script>
+    <header>
+      <section class="header-nav">
+        <div class="header-nav-inner">
+          <a href="index.html"><h1>itBlog</h1></a>
+          <div class="header-nav-group">
+            <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+            <div class="popup" onclick="closePopup(event)">
+              <div class="popup-content" onclick="event.stopPropagation();">
+                <h3 class="popup-title">Підпишіться на нашу розсилку!</h3>
+                <form onsubmit="submitForm(event)">
+                  <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Введіть вашу пошту" required />
+                    <button type="submit" onclick="clearAndClose(event)">Відправити</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <input type="text" id="search-input" class="header-search-input" placeholder="Пошук...." style="display: none" onblur="hideSearch()" onkeydown="checkForEnter(event)" />
+            <img src="img/search-button.png" alt="Search Button" class="header-search-button" onclick="toggleSearch()" />
+            <div class="burger-menu">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+              <div class="menubox">
+                <div class="menu-box-inner">
+                  <input type="text" class="menu-search-input" placeholder="Пошук...." />
+                  <div class="menu-box-buttons">
+                    <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+                    <a href="index.html"><p class="category">Статті</p></a>
+                    <a href="index.html"><p class="category">Туторіали</p></a>
+                    <a href="index.html"><p class="category">Технології</p></a>
+                    <a href="popular.html"><p class="category">Популярне</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="main-content">
+        <article class="article-content-inner-1">
+          <div class="article-path">
+            <p><a href="index.html">itBlog</a> > Метавсесвіт</p>
+          </div>
+          <div class="article-header">
+            <h2>Метавсесвіт: що це і чому він такий популярний?</h2>
+            <div class="article-info">
+              <p><b>By</b> itProger</p>
+              <p>19 січня 2023</p>
+            </div>
+          </div>
+          <div class="article-text">
+            <p>Сьогодні метавсесвіт стає так само популярним, як&nbsp;свого часу крипта і&nbsp;біток. Попри&nbsp;те, що&nbsp;слово &laquo;метавсесвіт&raquo; вимовляється майже з&nbsp;кожної праски, мало хто до&nbsp;кінця розуміє, що&nbsp;це.</p>
+            <h4>Принципи та суть метавсесвіту</h4>
+            <p>Метавсесвіт&nbsp;&mdash; це&nbsp;той самий інтернет, але його використання відбувається за&nbsp;допомогою доповненої та&nbsp;віртуальної реальності. Існує безліч концепцій, які вже використовуються у&nbsp;вигляді демо-версії або можуть з&rsquo;явитися в&nbsp;нашому житті в&nbsp;найближчому майбутньому. Одну з&nbsp;них презентував Марк Цукерберг 2021&nbsp;року. Метавсесвіт або інтернет версії WEB.3.0 вже використовується на&nbsp;просторах інтернету. В&nbsp;його основі лежить тривимірна взаємодія з&nbsp;контентом. Тобто людина не&nbsp;просто отримуватиме необхідну інформацію, а&nbsp;стане її&nbsp;частиною.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/news/1673795393.jpeg" alt="Meta" /></div>
+            <p><br /></p>
+            <p>Але найвідомішу варіацію метавсесвіту представив Метью Бол. Він презентував 7&nbsp;основних принципів свого концепту:</p>
+            <p><br /></p>
+            <ol>
+              <li>Відсутність будь-яких кордонів, тобто метавсесвіт нескінченний, водночас у&nbsp;ньому не&nbsp;можна видаляти інформацію, ставити процеси на&nbsp;паузу або завершувати що-небудь.</li>
+              <li>Населяти метавсесвіт може незліченна кількість людей.</li>
+              <li>Кожна дія відбуватиметься в&nbsp;режимі реального часу без можливості впливу зовнішніх факторів.</li>
+              <li>Кожен охочий може заробити гроші та&nbsp;купувати у&nbsp;власність будь-що з&nbsp;подальшою можливістю повністю розпоряджатися продуктом або нерухомістю. При цьому економіка має свої нові закони.</li>
+              <li>Дозволено вільне використання деталей з&nbsp;реального світу. Тобто для віртуальної роботи може бути використаний реальний ноутбук.</li>
+              <li>В&nbsp;одному метавсесвіті можуть бути централізовані елементи з&nbsp;різних платформ. Любителі CS&nbsp;можуть вільно купувати автомобілі з&nbsp;NFS, перепродуючи їх&nbsp;на&nbsp;Facebook.</li>
+              <li>Усе, що&nbsp;є&nbsp;в&nbsp;метавсесвіті, створюється різними людьми, цілими компаніями і&nbsp;звичайними користувачами.</li>
+              <p>Створення нового віртуального світу може бути актуальним у&nbsp;різних сферах від комунікацій до&nbsp;освітньої системи.</p>
+            </ol>
+            <p><br /></p>
+            <p>Створення нового віртуального світу може бути актуальним у&nbsp;різних сферах від комунікацій до&nbsp;освітньої системи.</p>
+            <p><br /></p>
+            <h4>Що доступно сьогодні?</h4>
+            <p>Сегодня уже можно найти сайты реализованные на&nbsp;концепции WEB.3.0. Но&nbsp;использовать их&nbsp;повсеместно пока нереально. Кроме того, компанией Meta было презентовано новое приложение&nbsp;&mdash; Horizon Workrooms. Оно предназначено для Oculus Quest 2&nbsp;&mdash; VR-шлема и&nbsp;позволит вывести удаленную работу на&nbsp;новый уровень. Да, это пока не&nbsp;та&nbsp;метавселенная, о&nbsp;которой говорил Цукерберг, но&nbsp;это уже что-то новое и&nbsp;интересное. Для взаимодействия с&nbsp;ним не&nbsp;требуется покупать шлем, достаточно использовать свой ноутбук или другое устройство. В&nbsp;приложении можно создать свой аватар, который и&nbsp;будет общаться с&nbsp;другими участниками беседы. Но&nbsp;пока оно только &laquo;учится&raquo;, а&nbsp;сегодня уже умеет:</p>
+            <p><br /></p>
+            <ul>
+              <li>розпізнавати рухи рук;</li>
+              <li>синхронізуватися з&nbsp;календарем Google і&nbsp;Outlook;</li>
+              <li>робити стрімінг відео у&nbsp;віддаленому форматі з&nbsp;іншого робочого столу;</li>
+              <li>відтворювати просторове аудіо;</li>
+              <li>трекери різних частин голови і&nbsp;тіла для більш плавних рухів;</li>
+              <li>здатність контролювати міміку власника.</li>
+            </ul>
+            <p><br /></p>
+            <p>Віртуальна розмова може одночасно вестися разом із&nbsp;50&nbsp;людьми.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/news/1673795395.jpeg" alt="Meta" /></div>
+            <p><br /></p>
+            <p>Але найбільший внесок у&nbsp;метавсесвіт наразі зробила компанія Epic Games. Ще&nbsp;2020 року під час локдауну їй&nbsp;вдалося зібрати на&nbsp;онлай-концерті Тревіса Скотта на&nbsp;платформі Fortnite близько 12&nbsp;000&nbsp;000&nbsp;користувачів.</p>
+            <p><br /></p>
+            <h4>Як можна заробити на метавсесвіті?</h4>
+            <p>Сьогодні заробити на&nbsp;метавсесвіті цілком реально, але в&nbsp;недалекому майбутньому ця&nbsp;можливість буде такою&nbsp;ж безмежною, як&nbsp;сама концепція. Поки що&nbsp;можна заробити на&nbsp;рекламі тієї&nbsp;ж Fortnite. На&nbsp;платформі проходять заходи, де&nbsp;рекламодавець може отримати персоналізований під себе віртуальний світ. У&nbsp;різних режимах доступні свої можливості. Наприклад, у&nbsp;творчому можна реалізовувати як&nbsp;ігрові сюжети, так і&nbsp;кастомізацію костюмів. Усе віртуальне &laquo;багатство&raquo; накопичене гравцями захищає технологія блокчейн, а&nbsp;саме NFT. Тому можна не&nbsp;переживати як&nbsp;про авторські права, так і&nbsp;про власність на&nbsp;купівлю будь-яких елементів.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/news/1673795390.jpeg" alt="Meta" /></div>
+            <p><br /></p>
+            <p>Сьогодні світ не&nbsp;готовий повністю перейти до&nbsp;будь-якої з&nbsp;концепцій метавсесвіту. Поки вона так і&nbsp;буде в&nbsp;якомусь чорновому варіанті використовуватися точково в&nbsp;різних напрямках. Але все зміниться з&nbsp;часом&nbsp;&mdash; чекаємо!</p>
+          </div>
+        </article>
+        <aside class="main-content-inner-2">
+          <section class="side-card">
+            <div class="side-card-header"><h2>Популярне</h2></div>
+            <a href="gpt4.html" class="side-card-1">
+              <img src="https://itproger.com/img/news/1679678512.jpg" alt="ChatGPT-4" />
+              <div class="side-card-info">
+                <h3>ChatGPT-4</h3>
+                <p>27 березня 2023</p>
+              </div>
+            </a>
+            <a href="meta.html" class="side-card-2">
+              <img src="https://s.digitalocean.ru/upload/1636974357_ai4846063_1920.jpg" alt="Meta" />
+              <div class="side-card-info">
+                <h3>Метавсесвіт</h3>
+                <p>19 січня 2023</p>
+              </div>
+            </a>
+            <a href="game-mech.html" class="side-card-3">
+              <img src="https://itproger.com/img/news/1673278741.jpg" alt="Game mechanics" />
+              <div class="side-card-info">
+                <h3>Ігрова механіка</h3>
+                <p>20 жовтня 2022</p>
+              </div>
+            </a>
+          </section>
+          <section class="side-categories">
+            <div class="side-categories-header"><h2>Розділи</h2></div>
+            <ul class="side-categories-list">
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Статті</p>
+                  <p>(19)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Туторіали</p>
+                  <p>(7)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Технології</p>
+                  <p>(28)</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <h4>© Artem Farennyk, 2023</h4>
+    </footer>
+  </body>
+</html>

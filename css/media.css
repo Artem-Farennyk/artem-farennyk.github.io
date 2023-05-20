@@ -1,0 +1,293 @@
+@media (max-width: 1440px) {
+  .header-nav-inner {
+    margin-left: 36px;
+    margin-right: 40px;
+  }
+  .banner-article {
+    height: 332.26px;
+  }
+  .main-content {
+    gap: 16px;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .main-content-inner-1 {
+    gap: 24px;
+  }
+  .main-content-inner-2 {
+    gap: 24px;
+  }
+
+  .cards-section {
+    gap: 16px;
+  }
+
+  .cards-section-inner-1,
+  .cards-section-inner-2 {
+    gap: 16px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 100%;
+    height: 350px;
+  }
+
+  .side-card {
+    gap: 14px;
+  }
+
+  .side-card-1,
+  .side-card-2,
+  .side-card-3 {
+    height: 81px;
+  }
+
+  .info {
+    padding-top: 11.45px;
+    padding-bottom: 33px;
+    padding-left: 9.29px;
+    padding-right: 10.98px;
+  }
+  .label {
+    margin-bottom: 2px;
+  }
+  .info h3 {
+    margin-bottom: 1px;
+  }
+  .author {
+    margin-bottom: 13.48px;
+  }
+  .article-content {
+    margin-bottom: 5px;
+  }
+  .side-categories {
+    gap: 14px;
+  }
+  .side-card-1 img,
+  .side-card-2 img,
+  .side-card-3 img {
+    width: 111.38px;
+    height: 59.06px;
+  }
+
+  .side-card-info {
+    height: 59.06px;
+  }
+}
+
+@media (max-width: 1024px) {
+  * {
+    transform: none !important;
+  }
+  .menu-btn {
+    display: flex;
+  }
+
+  .menu-box-inner aside {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-nav-button,
+  .header-search-button {
+    display: none;
+  }
+  .header-nav-inner {
+    margin-left: 36px;
+    margin-right: 40px;
+  }
+  .banner-article {
+    height: 354px;
+  }
+  .main-content,
+  .popular-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .main-content-inner-1 {
+    width: 100%;
+    gap: 20px;
+  }
+  .article-content-inner-1 {
+    width: 100%;
+  }
+  .main-content-inner-2 {
+    display: none;
+  }
+
+  .cards-section {
+    gap: 20px;
+  }
+
+  .cards-section-inner-1,
+  .cards-section-inner-2 {
+    gap: 16px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 100%;
+    height: 370.58px;
+  }
+
+  .info {
+    padding-top: 12.12px;
+    padding-bottom: 34.94px;
+    padding-left: 9.9px;
+    padding-right: 11.7px;
+  }
+  .label {
+    margin-bottom: 2.12px;
+  }
+  .info h3 {
+    margin-bottom: 1.06px;
+  }
+  .author {
+    margin-bottom: 14.28px;
+  }
+  .article-content {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 744px) {
+  .header-nav-inner {
+    margin-left: 20px;
+    margin-right: 21px;
+  }
+  
+  .banner-article {
+    height: 206px;
+  }
+  .main-content,
+  .popular-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .main-content-inner-1 {
+    gap: 15px;
+  }
+  .main-content-inner-2 {
+    display: none;
+  }
+
+  .cards-section {
+    gap: 15px;
+  }
+
+  .cards-section-inner-1,
+  .cards-section-inner-2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 100%;
+    height: 407px;
+  }
+
+  .cards-section-header {
+    height: 28px;
+  }
+
+  .banner-article h3 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .cards-section-header h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cards-section-header a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .cards-section-header {
+    padding-left: 11px;
+    padding-right: 13px;
+  }
+  .info {
+    padding-top: 14.52px;
+    padding-bottom: 42.25px;
+    padding-left: 12.76px;
+    padding-right: 12.87px;
+  }
+  .label {
+    margin-bottom: 2.54px;
+  }
+  .info h3 {
+    margin-bottom: 1.27px;
+  }
+  .author {
+    margin-bottom: 9.32px;
+  }
+  .article-content {
+    margin-bottom: 5.39px;
+  }
+
+  .menubox {
+    padding-left: 19px;
+    padding-right: 20px;
+    padding-top: 69.54px;
+   
+
+  }
+
+  .menu-box-buttons a p,
+  .menu-box-buttons a {
+    font-size: 32px;
+    line-height: 39px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menu-search-input {
+    margin-bottom: 10px;
+  }
+
+  .article-path {
+    height: 28px;
+  }
+
+  .article-header {
+    margin-bottom: 20px;
+  }
+
+  .article-info {
+    gap: 20px;
+  }
+
+  .article-header h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .article-info p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

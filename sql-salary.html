@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>itBlog</title>
+  </head>
+  <body>
+    <script src="js/script.js"></script>
+    <header>
+      <section class="header-nav">
+        <div class="header-nav-inner">
+          <a href="index.html"><h1>itBlog</h1></a>
+          <div class="header-nav-group">
+            <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+            <div class="popup" onclick="closePopup(event)">
+              <div class="popup-content" onclick="event.stopPropagation();">
+                <h3 class="popup-title">Підпишіться на нашу розсилку!</h3>
+                <form onsubmit="submitForm(event)">
+                  <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Введіть вашу пошту" required />
+                    <button type="submit" onclick="clearAndClose(event)">Відправити</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <input type="text" id="search-input" class="header-search-input" placeholder="Пошук...." style="display: none" onblur="hideSearch()" onkeydown="checkForEnter(event)" />
+            <img src="img/search-button.png" alt="Search Button" class="header-search-button" onclick="toggleSearch()" />
+            <div class="burger-menu">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+              <div class="menubox">
+                <div class="menu-box-inner">
+                  <input type="text" class="menu-search-input" placeholder="Пошук...." />
+                  <div class="menu-box-buttons">
+                    <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+                    <a href="index.html"><p class="category">Статті</p></a>
+                    <a href="index.html"><p class="category">Туторіали</p></a>
+                    <a href="index.html"><p class="category">Технології</p></a>
+                    <a href="popular.html"><p class="category">Популярне</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="main-content">
+        <article class="article-content-inner-1">
+          <div class="article-path">
+            <p><a href="index.html">itBlog</a> > Зарплата SQL-розробника</p>
+          </div>
+          <div class="article-header">
+            <h2>Яка зарплата у розробника SQL?</h2>
+            <div class="article-info">
+              <p><b>By</b> itProger</p>
+              <p>14 травня 2023</p>
+            </div>
+          </div>
+          <div class="article-text">
+            <p>Останні кілька років у&nbsp;розробці все більше популяризують дані та&nbsp;їхнє правильне зберігання. Багато хто навіть вважає інформацію новою нафтою. А&nbsp;все що&nbsp;відбувається навколо&nbsp;&mdash; підтверджує вислів.</p>
+            <p><br /></p>
+            <p>Дані дійсно оточують нас у&nbsp;всіх сферах життя. Усе це&nbsp;призвело до&nbsp;підвищеної затребуваності фахівців SQL. Але найцікавіше в&nbsp;цьому всьому&nbsp;те, що&nbsp;у&nbsp;професіоналів&nbsp;&mdash; гнучкий графік, найчастіше віддалена робота, чудові умови праці&nbsp;і, звичайно, високий рівень заробітної плати. В&nbsp;інтернеті можна знайти багато інформації про завищені вимоги до&nbsp;фахівців і&nbsp;високу зарплату. Чи&nbsp;так&nbsp;це?</p>
+            <p><br /></p>
+            <h4>Трохи про професію SQL</h4>
+            <p>SQL&nbsp;&mdash; Structured Query Language&nbsp;&mdash; це&nbsp;мова програмування, за&nbsp;допомогою якої здійснюється управління базами даних. Розробник SQL відповідає за&nbsp;розробку, налаштування і&nbsp;підтримку цих баз даних. Він&nbsp;же займається створенням різних продуктів, спрямованих на&nbsp;оптимізацію і&nbsp;підвищення продуктивності баз даних. Програмістам також потрібно взаємодіяти з&nbsp;написанням і&nbsp;налагодженням вихідного коду.</p>
+            <p><br /></p>
+            <p>Для початку роботи в&nbsp;цій сфері необхідна хоча&nbsp;б загальна освіта у&nbsp;сфері комп&rsquo;ютерних технологій. За&nbsp;кордоном потрібен ступінь бакалавра або магістра. Крім того, потрібне логічне мислення, стресостійкість і&nbsp;здатність вирішувати будь-які проблеми тут і&nbsp;зараз.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/news/1683961960.png" alt="SQL Salary" /></div>
+            <p><br /></p>
+            <p>Вимог не&nbsp;так вже й&nbsp;багато, але і&nbsp;вони, і&nbsp;заробітна плата дуже залежатимуть від рівня фахівця. Junior, middle і&nbsp;senior, звісно, отримуватимуть абсолютно різні суми, адже в&nbsp;них різний рівень досвіду, кваліфікації та&nbsp;відповідальності.</p>
+            <p><br /></p>
+            <h4>Junior SQL</h4>
+            <p>Фахівцям-початківцям завжди складно, незалежно від сфери діяльності. Основне, що&nbsp;вимагається від джунів&nbsp;&mdash; постійне навчання і&nbsp;виконання рутинних завдань. Найчастіше до&nbsp;цієї категорії належать студенти та&nbsp;особи, які мають досвід роботи у&nbsp;сфері до&nbsp;2-х років.</p>
+            <p><br /></p>
+            <p>Для джунів завжди багато роботи, тому що&nbsp;їм&nbsp;потрібна практика. Найчастіше цей шлях непростий, але найголовніше, що&nbsp;він відкриває шлях у&nbsp;професію. Найкраще, якщо такий юний працівник мотивований, але найчастіше це&nbsp;не&nbsp;так.</p>
+            <p><br /></p>
+            <p>Згідно з&nbsp;сайтом Ziprecruiter зарплата фахівців-початківців SQL приблизно від 40&nbsp;000 до&nbsp;60&nbsp;000 доларів США на&nbsp;рік. Але так, це&nbsp;без вирахування податків, а&nbsp;вони можуть сягати і&nbsp;40% від цієї суми.</p>
+            <p><br /></p>
+            <h4>Middle SQL</h4>
+            <p>Мідли це&nbsp;вже новий рівень. Робота в&nbsp;них більш відповідальна, а&nbsp;навантаження високе. Але тут головне не&nbsp;вчитися, а&nbsp;показувати свої знання. Щоб працювати мідлом потрібно від 2&nbsp;до&nbsp;6&nbsp;років досвіду роботи в&nbsp;SQL. І&nbsp;хоча вчитися теж потрібно, на&nbsp;працівника вже звалюють самостійну розробку, оптимізацію та&nbsp;підтримку баз даних, а&nbsp;також створення складних SQL-запитів, оптимізацію продуктивності та&nbsp;участь в&nbsp;архітектурних рішеннях.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/news/1683961962.jpg" alt="SQL Salary" /></div>
+            <p><br /></p>
+            <p>Але умови, вимоги, обов&rsquo;язки та&nbsp;заробітна плата дуже коливаються залежно від компанії та&nbsp;країни, в&nbsp;якій вона розташована. Так, якщо досвід middle-SQL значний&nbsp;&mdash; з/п зростатиме.</p>
+            <p><br /></p>
+            <p>За даними сайту Glassdoor фахівцям цього рівня готові платити від 60 000 до 90 000 доларів США на рік.</p>
+            <p><br /></p>
+            <h4>Senior SQL</h4>
+            <p>Сеньйори&nbsp;&mdash; це&nbsp;вищий левел. Їхня робота найскладніша, адже відповідальність вони несуть за&nbsp;весь проєкт. Фахівці мають керувати проєктами, розробляти складні бази даних і&nbsp;архітектури, а&nbsp;також оптимізувати і&nbsp;забезпечувати безпеку бази даних. Крім того, часто на&nbsp;їхні плечі звалюють керівництво командою. Їм&nbsp;дають як&nbsp;SQL-фахівців нижчого рангу, так і&nbsp;профі із&nbsp;суміжних професій. Усіх потрібно навчити і&nbsp;контролювати, а&nbsp;також усім необхідно роздати завдання.</p>
+            <p><br /></p>
+            <p>Senior&nbsp;&mdash; це&nbsp;як&nbsp;сполучна ланка. Він веде переговори із&nbsp;замовником, бере в&nbsp;роботу проєкт і&nbsp;презентує його теж він. За&nbsp;все це&nbsp;за&nbsp;даними Payscale роботодавці готові платити приблизно від 90&nbsp;000 до&nbsp;120&nbsp;000 доларів США на&nbsp;рік і&nbsp;вище.</p>
+            <p><br /></p>
+            <p>Як&nbsp;бачите, заробітні плати у&nbsp;SQL-фахівців досить хороші, але є&nbsp;IT-професії, де&nbsp;достаток на&nbsp;порядок вищий.</p>
+          </div>
+        </article>
+        <aside class="main-content-inner-2">
+          <section class="side-card">
+            <div class="side-card-header"><h2>Популярне</h2></div>
+            <a href="gpt4.html" class="side-card-1">
+              <img src="https://itproger.com/img/news/1679678512.jpg" alt="ChatGPT-4" />
+              <div class="side-card-info">
+                <h3>ChatGPT-4</h3>
+                <p>27 березня 2023</p>
+              </div>
+            </a>
+            <a href="meta.html" class="side-card-2">
+              <img src="https://s.digitalocean.ru/upload/1636974357_ai4846063_1920.jpg" alt="Meta" />
+              <div class="side-card-info">
+                <h3>Метавсесвіт</h3>
+                <p>19 січня 2023</p>
+              </div>
+            </a>
+            <a href="game-mech.html" class="side-card-3">
+              <img src="https://itproger.com/img/news/1673278741.jpg" alt="Game mechanics" />
+              <div class="side-card-info">
+                <h3>Ігрова механіка</h3>
+                <p>20 жовтня 2022</p>
+              </div>
+            </a>
+          </section>
+          <section class="side-categories">
+            <div class="side-categories-header"><h2>Розділи</h2></div>
+            <ul class="side-categories-list">
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Статті</p>
+                  <p>(19)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Туторіали</p>
+                  <p>(7)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Технології</p>
+                  <p>(28)</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <h4>© Artem Farennyk, 2023</h4>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>itBlog</title>
+  </head>
+  <body>
+    <script src="js/script.js"></script>
+    <header>
+      <section class="header-nav">
+        <div class="header-nav-inner">
+          <a href="index.html"><h1>itBlog</h1></a>
+          <div class="header-nav-group">
+            <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+            <div class="popup" onclick="closePopup(event)">
+              <div class="popup-content" onclick="event.stopPropagation();">
+                <h3 class="popup-title">Підпишіться на нашу розсилку!</h3>
+                <form onsubmit="submitForm(event)">
+                  <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Введіть вашу пошту" required />
+                    <button type="submit" onclick="clearAndClose(event)">Відправити</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <input type="text" id="search-input" class="header-search-input" placeholder="Пошук...." style="display: none" onblur="hideSearch()" onkeydown="checkForEnter(event)" />
+            <img src="img/search-button.png" alt="Search Button" class="header-search-button" onclick="toggleSearch()" />
+            <div class="burger-menu">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+              <div class="menubox">
+                <div class="menu-box-inner">
+                  <input type="text" class="menu-search-input" placeholder="Пошук...." />
+                  <div class="menu-box-buttons">
+                    <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+                    <a href="index.html"><p class="category">Статті</p></a>
+                    <a href="index.html"><p class="category">Туторіали</p></a>
+                    <a href="index.html"><p class="category">Технології</p></a>
+                    <a href="popular.html"><p class="category">Популярне</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="main-content">
+        <article class="article-content-inner-1">
+          <div class="article-path">
+            <p><a href="index.html">itBlog</a> > Чому варто вивчити С#?</p>
+          </div>
+          <div class="article-header">
+            <h2>Чому варто вивчити С#?</h2>
+            <div class="article-info">
+              <p><b>By</b> itProger</p>
+              <p>23 квітня 2023</p>
+            </div>
+          </div>
+          <div class="article-text">
+            <p>Мова програмування C# поступово набирає все більшої популярності, а&nbsp;розробники, що&nbsp;працюють з&nbsp;ним, отримують круглі суми. Це&nbsp;вже є&nbsp;непоганою підмогою для того, щоб почати вивчати C#.</p>
+            <h4>Пару слів про С#</h4>
+            <p>C# або &laquo;сі-шарп&raquo;&nbsp;&mdash; це&nbsp;об&rsquo;єктно-орієнтована мова програмування, представлена компанією Microsoft у&nbsp;2000&nbsp;році. Він був створений для платформи .NET Framework. Його призначення&nbsp;&mdash; створення програм для завантаження систем Windows, веб-додатків, мобільних програм та&nbsp;ігор. Але сьогодні C# також активно використовують для систем безпеки, файлових систем та&nbsp;створення різних продуктів для ОС&nbsp;Android та&nbsp;iOS.</p>
+            <p><br /></p>
+            <p>Як&nbsp;тільки починаєш працювати з&nbsp;цими мовами, відразу можна визначити схожість його синтаксису з&nbsp;С і&nbsp;Java. І&nbsp;це&nbsp;не&nbsp;дивно, адже &laquo;сі-шарп&raquo; створювався як&nbsp;конкурент Java, а&nbsp;для роботи багато чого перейняв у&nbsp;С.&nbsp;Тому незважаючи на&nbsp;свій солідний вік, став якимось сином цих двох мов.</p>
+            <p><br /></p>
+            <p>Багатозадачність C# стала доступною за&nbsp;рахунок практично постійної прив&rsquo;язки до&nbsp;фреймворків. Крім того, він поєднує в&nbsp;собі простоту використання, гнучкість та&nbsp;потужність, а&nbsp;також можливість зручного створення якісного програмного забезпечення.</p>
+            <p><br /></p>
+            <h4>Де використовувати C#?</h4>
+            <h4>Розробка ігор</h4>
+            <p>C# активно використовується в&nbsp;геймдеві і&nbsp;дуже любимо розробниками ігор. Його часто поєднують з&nbsp;найпопулярнішим ігровим двигуном Unity. В&nbsp;останньому досить великий функціонал і&nbsp;є&nbsp;все, що&nbsp;потрібне для створення ігор від фізики до&nbsp;редактора графіки.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/courses/1588405507.jpg" alt="C#" /></div>
+            <p><br /></p>
+            <p>Так, використовують C# разом із&nbsp;Unity в&nbsp;основному невеликі компанії. Але вони все&nbsp;ж таки відмінно поєднуються і&nbsp;дозволяють писати як&nbsp;2D, так і&nbsp;3D&nbsp;ігри. C# також застосовують в&nbsp;інді-розробці ігор і&nbsp;на&nbsp;движку Unreal Engine.</p>
+            <p><br /></p>
+            <h4>Веб розробка</h4>
+            <p>C# знайшов себе і&nbsp;у&nbsp;фронтенд і&nbsp;бекенд розробці. Його активно застосовують для створення веб-застосунків та&nbsp;веб-сайтів на&nbsp;платформі ASP.NET. Остання надає широкі можливості для створення веб-сайтів та&nbsp;веб-застосунків. І&nbsp;хоча на&nbsp;момент створення самого С#.NET бібліотеки не&nbsp;мали популярності через слабкий функціонал, платформа ASP.NET все&nbsp;ж мала безліч шанувальників. А&nbsp;після кардинальних змін, які привніс до&nbsp;неї Microsoft, у&nbsp;ній з&rsquo;явилася кросплатформеність і&nbsp;збільшилася швидкість.</p>
+            <p><br /></p>
+            <h4>Машинне навчання (ML)</h4>
+            <p>С# відмінно підходить для розробки програм машинного навчання, особливо в&nbsp;Microsoft Azure Machine Learning Studio. Його типізованості та&nbsp;орієнтованості на&nbsp;ОВП достатньо для створення, розвитку та&nbsp;розгортання моделей машинного навчання. Крім того, мова дозволяє відмінно інтегруватися зі&nbsp;сторонніми системами.</p>
+            <p><br /></p>
+            <h4>Перспективи для С# розробників</h4>
+            <p>З&nbsp;С# так само, як&nbsp;і&nbsp;з&nbsp;іншими сферами IT. Чим більший досвід роботи, тим більша ставка. Джунам можна спокійно розраховувати на&nbsp;оклад у&nbsp;1000&nbsp;доларів, а&nbsp;професіоналам із&nbsp;досвідом від 1&nbsp;року&nbsp;&mdash; у&nbsp;2000-3000&nbsp;доларів. А&nbsp;тим, хто вищий&nbsp;&mdash; удвічі простіше. Тому якщо ви&nbsp;дослужитеся до&nbsp;синьйора, компанія вас так просто не&nbsp;віддасть і&nbsp;задобрюватиме додатковими плюшками.</p>
+            <p><br /></p>
+            <h4>Висновок</h4>
+            <p>Як&nbsp;ви&nbsp;вже зрозуміли, С# має велику кількість призначень. Його можна використовувати і&nbsp;в&nbsp;розробці ігор, і&nbsp;сайтів, і&nbsp;навіть у&nbsp;машинному навчанні. Він чудово зафіксувався у&nbsp;20-ці лідерів серед інших мов та&nbsp;допомагає своїм прихильникам заробляти хороші гроші. При цьому ринок не&nbsp;перенасичений кількістю спеціалістів. Вчити С# дійсно варто, якщо ви&nbsp;працюєте з&nbsp;тими напрямками, в&nbsp;яких він по-справжньому сильний.</p>
+          </div>
+        </article>
+        <aside class="main-content-inner-2">
+          <section class="side-card">
+            <div class="side-card-header"><h2>Популярне</h2></div>
+            <a href="gpt4.html" class="side-card-1">
+              <img src="https://itproger.com/img/news/1679678512.jpg" alt="ChatGPT-4" />
+              <div class="side-card-info">
+                <h3>ChatGPT-4</h3>
+                <p>27 березня 2023</p>
+              </div>
+            </a>
+            <a href="meta.html" class="side-card-2">
+              <img src="https://s.digitalocean.ru/upload/1636974357_ai4846063_1920.jpg" alt="Meta" />
+              <div class="side-card-info">
+                <h3>Метавсесвіт</h3>
+                <p>19 січня 2023</p>
+              </div>
+            </a>
+            <a href="game-mech.html" class="side-card-3">
+              <img src="https://itproger.com/img/news/1673278741.jpg" alt="Game mechanics" />
+              <div class="side-card-info">
+                <h3>Ігрова механіка</h3>
+                <p>20 жовтня 2022</p>
+              </div>
+            </a>
+          </section>
+          <section class="side-categories">
+            <div class="side-categories-header"><h2>Розділи</h2></div>
+            <ul class="side-categories-list">
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Статті</p>
+                  <p>(19)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Туторіали</p>
+                  <p>(7)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Технології</p>
+                  <p>(28)</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <h4>© Artem Farennyk, 2023</h4>
+    </footer>
+  </body>
+</html>

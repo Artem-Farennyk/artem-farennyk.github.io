@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>itBlog</title>
+  </head>
+  <body>
+    <script src="js/script.js"></script>
+    <header>
+      <section class="header-nav">
+        <div class="header-nav-inner">
+          <a href="index.html"><h1>itBlog</h1></a>
+          <div class="header-nav-group">
+            <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+            <div class="popup" onclick="closePopup(event)">
+              <div class="popup-content" onclick="event.stopPropagation();">
+                <h3 class="popup-title">Підпишіться на нашу розсилку!</h3>
+                <form onsubmit="submitForm(event)">
+                  <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Введіть вашу пошту" required />
+                    <button type="submit" onclick="clearAndClose(event)">Відправити</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <input type="text" id="search-input" class="header-search-input" placeholder="Пошук...." style="display: none" onblur="hideSearch()" onkeydown="checkForEnter(event)" />
+            <img src="img/search-button.png" alt="Search Button" class="header-search-button" onclick="toggleSearch()" />
+            <div class="burger-menu">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+              <div class="menubox">
+                <div class="menu-box-inner">
+                  <input type="text" class="menu-search-input" placeholder="Пошук...." />
+                  <div class="menu-box-buttons">
+                    <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+                    <a href="index.html"><p class="category">Статті</p></a>
+                    <a href="index.html"><p class="category">Туторіали</p></a>
+                    <a href="index.html"><p class="category">Технології</p></a>
+                    <a href="popular.html"><p class="category">Популярне</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="main-content">
+        <article class="article-content-inner-1">
+          <div class="article-path">
+            <p><a href="index.html">itBlog</a> > ChatGPT-4</p>
+          </div>
+          <div class="article-header">
+            <h2>Новий ChatGPT-4: у чому його особливість?</h2>
+            <div class="article-info">
+              <p><b>By</b> itProger</p>
+              <p>27 березня 2023</p>
+            </div>
+          </div>
+          <div class="article-text">
+            <p>Американська компанія OpenAI представила світові нову версію мовної моделі GPT-4. Її&nbsp;творці запевняють, що&nbsp;вона набагато &laquo;розумніша&raquo; і&nbsp;функціональніша за&nbsp;попередні. Чи&nbsp;так&nbsp;це?</p>
+            <h4>Можливість обробки відео та зображень</h4>
+            <p>Нововведенням є&nbsp;здатність нової версії технології виконувати обробку відео та&nbsp;зображень. Так, в&nbsp;штучний інтелект додали величезний потік інформації, що&nbsp;зробило GPT-4 здатним проводити аналіз тексту на&nbsp;картинці або загалом надавати своє розуміння того, що&nbsp;зображено. До&nbsp;цієї версії все зводилося до&nbsp;розбору тексту, а&nbsp;зараз продукт компанії OpenAI, одним із&nbsp;засновників якої є&nbsp;Ілон Маск, здатний пояснити значення мема та&nbsp;дати висновок за&nbsp;завантаженим графіком.</p>
+            <p><br /></p>
+            <h4>Ще більше мов</h4>
+            <p>У&nbsp;GPT-4 доступні вже 26&nbsp;мов. Чат-бот зможе дискутувати з&nbsp;користувачами будь-якої країни світу. І&nbsp;це&nbsp;не&nbsp;просто міні-діалог на&nbsp;пару фраз, а&nbsp;повноцінна розмова, відповіді на&nbsp;глибокі та&nbsp;заплутані питання, якісний переклад тексту та&nbsp;можливість тезового аналізу даних.</p>
+            <p><br /></p>
+            <h4>"Керування" і зміна "особистості"</h4>
+            <p>Тепер GPT здатний змінювати кінцеві характеристики власної особи. Все це&nbsp;можливо завдяки &laquo;керованості&raquo;. Остання є&nbsp;здатністю&nbsp;ШІ контролювати та&nbsp;налаштовувати вихідні дані моделі. Це&nbsp;може закласти зміну стилю тексту, створення специфічних відповіді питання, зміна тональності повідомлень тощо. Тобто при введенні запитів у&nbsp;GPT-4 тепер можна задати тон, стиль і&nbsp;унікальність майбутньої відповіді.</p>
+            <p><br /></p>
+            <h4>Реалізація сайтів та комп'ютерних ігор</h4>
+            <p>GPT-4 може використовуватися для деяких аспектів створення веб-сайтів та&nbsp;ігор, таких як&nbsp;створення контенту або створення базових елементів дизайну. Це&nbsp;може скоротити час та&nbsp;спростити процес створення проектів. Один із&nbsp;творців OpenAI Грегор Брокман довів, що&nbsp;ШІ здатний реалізувати готовий, але простий сайт лише за&nbsp;кілька хвилин. GPT-4 виконав завдання в&nbsp;режимі реального часу та&nbsp;залучив до&nbsp;перегляду величезну аудиторію користувачів.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/news/1679678640.jpg" alt="ChatGPT-4" /></div>
+            <p><br /></p>
+            <h4>Складання іспиту на відмінно</h4>
+            <p>ШІ&nbsp;досяг хороших результатів щодо різних наук. Тепер 4-е покоління креативніше і&nbsp;видає цікавіші відповіді на&nbsp;запитання. Саме це&nbsp;дозволяє GPT-4&nbsp;на відмінно відповідати і&nbsp;на&nbsp;екзаменаційні квитки.</p>
+            <p><br /></p>
+            <h4>Цікавий факт про GPT-4</h4>
+            <p>Дослідники ARC&nbsp;&mdash; Alignment Research Center&nbsp;&mdash; захотіли перевірити можливості GPT-4&nbsp;і дали завдання, щоб він пройшов тест Captcha. Але замість того, щоб проходити його самостійно, ШІ&nbsp;попросив здійснити вхід одного з&nbsp;фрілансерів TaskRabbit. Але оскільки виконавець запідозрив, що&nbsp;запит здійснив робот, для переконливості легенди GPT-4&nbsp;збрехав, що&nbsp;він просто має проблеми зі&nbsp;зором.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/news/1679678544.jpg" alt="ChatGPT-4" /></div>
+            <p><br /></p>
+            <p>Користувачі відразу підхопили хвилю нових можливостей ШІ. За 3 дні вони накидали йому безліч цікавих запитів. Наприклад, один із них попросив GPT-4 розробити цілу програму на iOS, а другий надав чату бюджет у 100 доларів і попросив примножити їх, якнайшвидше. І так, все вийшло.</p>
+          </div>
+        </article>
+        <aside class="main-content-inner-2">
+          <section class="side-card">
+            <div class="side-card-header"><h2>Популярне</h2></div>
+            <a href="gpt4.html" class="side-card-1">
+              <img src="https://itproger.com/img/news/1679678512.jpg" alt="ChatGPT-4" />
+              <div class="side-card-info">
+                <h3>ChatGPT-4</h3>
+                <p>27 березня 2023</p>
+              </div>
+            </a>
+            <a href="meta.html" class="side-card-2">
+              <img src="https://s.digitalocean.ru/upload/1636974357_ai4846063_1920.jpg" alt="Meta" />
+              <div class="side-card-info">
+                <h3>Метавсесвіт</h3>
+                <p>19 січня 2023</p>
+              </div>
+            </a>
+            <a href="game-mech.html" class="side-card-3">
+              <img src="https://itproger.com/img/news/1673278741.jpg" alt="Game mechanics" />
+              <div class="side-card-info">
+                <h3>Ігрова механіка</h3>
+                <p>20 жовтня 2022</p>
+              </div>
+            </a>
+          </section>
+          <section class="side-categories">
+            <div class="side-categories-header"><h2>Розділи</h2></div>
+            <ul class="side-categories-list">
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Статті</p>
+                  <p>(19)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Туторіали</p>
+                  <p>(7)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Технології</p>
+                  <p>(28)</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <h4>© Artem Farennyk, 2023</h4>
+    </footer>
+  </body>
+</html>

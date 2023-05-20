@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>itBlog</title>
+  </head>
+  <body>
+    <script src="js/script.js"></script>
+    <header>
+      <section class="header-nav">
+        <div class="header-nav-inner">
+          <a href="index.html"><h1>itBlog</h1></a>
+          <div class="header-nav-group">
+            <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+            <div class="popup" onclick="closePopup(event)">
+              <div class="popup-content" onclick="event.stopPropagation();">
+                <h3 class="popup-title">Підпишіться на нашу розсилку!</h3>
+                <form onsubmit="submitForm(event)">
+                  <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Введіть вашу пошту" required />
+                    <button type="submit" onclick="clearAndClose(event)">Відправити</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <input type="text" id="search-input" class="header-search-input" placeholder="Пошук...." style="display: none" onblur="hideSearch()" onkeydown="checkForEnter(event)" />
+            <img src="img/search-button.png" alt="Search Button" class="header-search-button" onclick="toggleSearch()" />
+            <div class="burger-menu">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+              <div class="menubox">
+                <div class="menu-box-inner">
+                  <input type="text" class="menu-search-input" placeholder="Пошук...." />
+                  <div class="menu-box-buttons">
+                    <a href="#" class="header-nav-button" onclick="showPopup(event)">Підписатися</a>
+                    <a href="index.html"><p class="category">Статті</p></a>
+                    <a href="index.html"><p class="category">Туторіали</p></a>
+                    <a href="index.html"><p class="category">Технології</p></a>
+                    <a href="popular.html"><p class="category">Популярне</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="main-content">
+        <article class="article-content-inner-1">
+          <div class="article-path">
+            <p><a href="index.html">itBlog</a> > Kotlin vs Java</p>
+          </div>
+          <div class="article-header">
+            <h2>Чи здатний Kotlin замінити Java у розробці для Android?</h2>
+            <div class="article-info">
+              <p><b>By</b> itProger</p>
+              <p>12 травня 2023</p>
+            </div>
+          </div>
+          <div class="article-text">
+            <p>Найчастіше, Андроїд розробка ведеться на&nbsp;мові Джава. Водночас, мова вже застаріла і&nbsp;в&nbsp;спину їй&nbsp;вже дихає молода мова Kotlin. Хто&nbsp;ж із&nbsp;них стане головною мовою для розробки Андроїд програм?</p>
+            <h4>Чи варто прощатися з Java та переходити на Kotlin?</h4>
+            <p>Ні, принаймні поки що&nbsp;ні. А&nbsp;це&nbsp;&laquo;поки&nbsp;що&raquo; може тривати десятки років. Як&nbsp;би&nbsp;не&nbsp;хотілося попрощатися з&nbsp;Java, це&nbsp;буде зробити дуже складно. Усе, що&nbsp;пов&rsquo;язано з&nbsp;Android&nbsp;&mdash; Java, багато сайтів, застосунків, ігор тощо також створені на&nbsp;ній, адже це&nbsp;одна з&nbsp;мов, які найчастіше використовуються. Тому поки що&nbsp;&laquo;прощатися&raquo; рано. Але починати вивчати Kotlin все&nbsp;ж варто.</p>
+            <p><br /></p>
+            <p>Java&nbsp;&mdash; це&nbsp;вже&nbsp;НЕ така сучасна мова програмування, якою була, і&nbsp;вже частину завдань з&nbsp;її&nbsp;допомогою виконувати нераціонально. Її&nbsp;вже не&nbsp;можна впихнути в&nbsp;будь-який проєкт і&nbsp;сподіватися, що&nbsp;вона зможе бути гнучкою, високопродуктивною і&nbsp;швидкою. У&nbsp;ній достатньо мінусів від нескінченних блоків try-catch і&nbsp;проблем із&nbsp;розширюваністю до&nbsp;відсутності підтримки функцій і&nbsp;прогалин у&nbsp;безпеці.</p>
+            <p><br /></p>
+            <h4>Переваги Kotlin</h4>
+            <p>Kotlin сумісний з&nbsp;Java і&nbsp;може працювати на&nbsp;платформі JVM, що&nbsp;дає змогу використовувати наявні бібліотеки та&nbsp;інструменти для розробки Android-додатків. А&nbsp;Google офіційно підтримує Kotlin для розробки Android-додатків і&nbsp;включив його в&nbsp;Android Studio, що&nbsp;робить його більш доступним і&nbsp;зручним для використання розробниками. Але це&nbsp;далеко не&nbsp;все, що&nbsp;може ця&nbsp;мова програмування. Нижче наведено 4&nbsp;важливі переваги.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/courses/1683276209.png" alt="Kotlin vs Java" /></div>
+            <p><br /></p>
+            <h4>Взаємозамінність</h4>
+            <p>Процес легкості взаємодії Java і&nbsp;Kotlin простежується навіть під час роботі з&nbsp;кодом. Розробники можуть писати код двома цими мовами прямо в&nbsp;одному проєкті, і&nbsp;вони будуть з&nbsp;легкістю компілюватися. Кінцевий користувач не&nbsp;зможе зрозуміти, що&nbsp;код був написаний при використанні одразу і&nbsp;Java, і&nbsp;Kotlin. Ніхто й&nbsp;не&nbsp;розрізнить, у&nbsp;яких ділянках проєкту було використано ту&nbsp;чи&nbsp;іншу мову.</p>
+            <p><br /></p>
+            <h4>Простота переходу з однієї мови на іншу</h4>
+            <p>Kotlin оснащений статичною типізацією від JetBrains і&nbsp;є&nbsp;не&nbsp;просто заміною Java, а&nbsp;його покращеною версією. Тому якщо ви&nbsp;чудово знаєте Java, ви&nbsp;з&nbsp;легкістю зможете перейти на&nbsp;Kotlin. Весь процес вивчення мови не&nbsp;буде захаращений безліччю незрозумілих аспектів. Синтаксис дуже схожий, алгоритми теж, а&nbsp;значить навіть без найменших знань Kotlin, ви&nbsp;не&nbsp;розгубитеся і&nbsp;зможете швидко розібратися.</p>
+            <p><br /></p>
+            <div><img src="https://itproger.com/img/courses/1683276106.png" alt="Kotlin vs Java" /></div>
+            <p><br /></p>
+            <h4>Підтримка Android Studio</h4>
+            <p>За&nbsp;допомогою Kotlin та&nbsp;інших мов було написано Android Studio. Також для його створення було використано ще&nbsp;один продукт JetBrains&nbsp;&mdash; IntelliJ IDEA. Власне зрозуміло, що&nbsp;у&nbsp;Kotlin буде відмінна підтримка Android Studio. Щойно ви&nbsp;завантажите і&nbsp;встановите плагін цієї мови програмування, за&nbsp;допомогою Android Studio можна буде зробити відразу всі необхідні налаштування. При цьому все це&nbsp;буде зробити дуже легко.</p>
+            <p><br /></p>
+            <h4>Коротший і зрозуміліший код</h4>
+            <p>Однією з&nbsp;основних переваг Kotlin є&nbsp;його виразність і&nbsp;зручний синтаксис, який робить код більш читабельним і&nbsp;зрозумілим. Kotlin також надає безпечніший код і&nbsp;запобігає деяким помилкам, які можуть виникнути під час використання Java. Крім того, помилок у&nbsp;Kotlin на&nbsp;порядок менше, зважаючи на&nbsp;коротший код. При цьому результат роботи з&nbsp;двома мовами буде однаковий, але там де&nbsp;стислість, там і&nbsp;набагато менше клопоту в&nbsp;роботі розробника. Тому створення будь-якого стандартного коду на&nbsp;Kotlin буде приємнішим, ніж робота з&nbsp;іншими мовами програмування, що&nbsp;вимагають великої кількості слів.</p>
+          </div>
+        </article>
+        <aside class="main-content-inner-2">
+          <section class="side-card">
+            <div class="side-card-header"><h2>Популярне</h2></div>
+            <a href="gpt4.html" class="side-card-1">
+              <img src="https://itproger.com/img/news/1679678512.jpg" alt="ChatGPT-4" />
+              <div class="side-card-info">
+                <h3>ChatGPT-4</h3>
+                <p>27 березня 2023</p>
+              </div>
+            </a>
+            <a href="meta.html" class="side-card-2">
+              <img src="https://s.digitalocean.ru/upload/1636974357_ai4846063_1920.jpg" alt="Meta" />
+              <div class="side-card-info">
+                <h3>Метавсесвіт</h3>
+                <p>19 січня 2023</p>
+              </div>
+            </a>
+            <a href="game-mech.html" class="side-card-3">
+              <img src="https://itproger.com/img/news/1673278741.jpg" alt="Game mechanics" />
+              <div class="side-card-info">
+                <h3>Ігрова механіка</h3>
+                <p>20 жовтня 2022</p>
+              </div>
+            </a>
+          </section>
+          <section class="side-categories">
+            <div class="side-categories-header"><h2>Розділи</h2></div>
+            <ul class="side-categories-list">
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Статті</p>
+                  <p>(19)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Туторіали</p>
+                  <p>(7)</p></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="category">> Технології</p>
+                  <p>(28)</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <h4>© Artem Farennyk, 2023</h4>
+    </footer>
+  </body>
+</html>
